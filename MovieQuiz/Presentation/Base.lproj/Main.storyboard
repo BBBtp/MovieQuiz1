@@ -50,6 +50,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="TYh-A6-MQU" secondAttribute="height" multiplier="2:3" id="js2-5c-Tft"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг этого фильма меньше чем 5 ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkG-Na-SRq" userLabel="Question Label">
                                         <rect key="frame" x="0.0" y="645.66666666666663" width="388" height="112.33333333333337"/>
@@ -117,6 +122,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnNo" destination="qvu-eL-mbx" id="lmc-vz-WUe"/>
+                        <outlet property="btnYes" destination="G1e-yR-4mA" id="Q2d-Au-UnJ"/>
                         <outlet property="counterLabel" destination="yaG-pK-q8o" id="4yy-8n-yo6"/>
                         <outlet property="imageView" destination="TYh-A6-MQU" id="qs6-mo-zur"/>
                         <outlet property="textLabel" destination="hkG-Na-SRq" id="lIW-j5-9zq"/>

@@ -7,6 +7,9 @@ final class MovieQuizViewController: UIViewController {
     @IBOutlet private var imageView: UIImageView!
     //Счетчик вопросов
     @IBOutlet private var counterLabel: UILabel!
+    
+    @IBOutlet weak var btnYes: UIButton!
+    @IBOutlet weak var btnNo: UIButton!
     //Переменная для хранения количества отвеченных вопросов
     private var currentQuestionIndex = 0
     //Переменная для правильных ответов
@@ -87,7 +90,7 @@ final class MovieQuizViewController: UIViewController {
     private func showAnswerResult(isCorrect: Bool) {
         imageView.layer.masksToBounds = true // 1
         imageView.layer.borderWidth = 8
-        imageView.layer.cornerRadius = 6
+        imageView.layer.cornerRadius = 20
         if isCorrect == true {
             imageView.layer.borderColor = UIColor.ypGreen.cgColor
             
@@ -105,15 +108,20 @@ final class MovieQuizViewController: UIViewController {
     //Следующий вопрос
     private func showNextQuestionOrResults() {
       if currentQuestionIndex == questions.count - 1 { // 1
-          let result = QuizResultsViewModel(title: "Раунд окончен", text: "Ваш результат: \(correctAnswers)", buttonText: "Сыграть еще раз")
+          let result = QuizResultsViewModel(title: "Раунд окончен", text: "Ваш результат: \(correctAnswers)/\(currentQuestionIndex+1)", buttonText: "Сыграть еще раз")
           show(quiz: result)
       }
       else { // 2
         currentQuestionIndex += 1
                   let nextQuestion = questions[currentQuestionIndex]
                   let viewModel = convert(model: nextQuestion)
-                  
+          
+          btnNo.isEnabled = true
+          btnYes.isEnabled = true
                   show(quiz: viewModel)
+          
+          
+          
       }
     }
     //результаты
@@ -129,6 +137,8 @@ final class MovieQuizViewController: UIViewController {
             
             let firstQuestion = self.questions[self.currentQuestionIndex]
             let viewModel = self.convert(model: firstQuestion)
+            self.btnYes.isEnabled = true
+            self.btnNo.isEnabled = true
             self.show(quiz: viewModel)
         }
         
@@ -141,20 +151,26 @@ final class MovieQuizViewController: UIViewController {
         if questions[currentQuestionIndex].correctAnswer == false {
             showAnswerResult(isCorrect: true)
             correctAnswers+=1
+            btnNo.isEnabled = false
         }
         else{
             showAnswerResult(isCorrect: false)
+            btnNo.isEnabled = false
             
         }
     }
     
+
     @IBAction private func yesButtonClicked(_ sender: Any) {
         if questions[currentQuestionIndex].correctAnswer == true {
             showAnswerResult(isCorrect: true)
             correctAnswers+=1
+            btnYes.isEnabled = false
+            
         }
         else{
             showAnswerResult(isCorrect: false)
+            btnYes.isEnabled = false
             
         }
     }
