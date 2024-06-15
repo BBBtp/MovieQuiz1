@@ -12,7 +12,7 @@ final class MovieQuizViewController: UIViewController,QuestionFactoryDelegate{
     @IBOutlet weak var btnNo: UIButton!
     //Переменная для хранения количества отвеченных вопросов
     private var currentQuestionIndex = 0
-    private var statisticService: StatisticService!
+    private var statisticService: StatisticServiceProtocol!
     //Переменная для правильных ответов
     private var correctAnswers = 0
     private let questionsAmount: Int = 10
@@ -43,7 +43,7 @@ final class MovieQuizViewController: UIViewController,QuestionFactoryDelegate{
       if currentQuestionIndex == questionsAmount - 1 { // 1
           statisticService.store(correct: correctAnswers, total: currentQuestionIndex+1)
           let bestGame = statisticService.bestGame
-          let result = QuizResultsViewModel(title: "Раунд окончен", text: "Ваш результат: \(correctAnswers)/\(currentQuestionIndex+1)\nКоличество сыгранных квизов: \(statisticService.gamesCount)\n Рекорд: \(bestGame.correct)/\(bestGame.total) \(bestGame.date)\nСредняя точность: \(String(format: "%.2f", statisticService.totalAccuracy))%", buttonText: "Сыграть еще раз")
+          let result = QuizResultsViewModel(title: "Раунд окончен", text: "Ваш результат: \(correctAnswers)/\(currentQuestionIndex+1)\nКоличество сыгранных квизов: \(statisticService.gamesCount)\n Рекорд: \(bestGame.correct)/\(bestGame.total) \(bestGame.date.dateTimeString)\nСредняя точность: \(String(format: "%.2f", statisticService.totalAccuracy))%", buttonText: "Сыграть еще раз")
           show(quiz: result)
       }
       else { // 2
