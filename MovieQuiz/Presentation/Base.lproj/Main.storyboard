@@ -111,17 +111,25 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fXB-Cd-7So">
+                                <rect key="frame" x="204" y="453" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IOD-Pt-9Sb" secondAttribute="trailing" constant="20" id="1tg-a9-RtA"/>
                             <constraint firstItem="IOD-Pt-9Sb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="9Kh-OZ-WQT"/>
+                            <constraint firstItem="fXB-Cd-7So" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EG5-xZ-oby"/>
+                            <constraint firstItem="fXB-Cd-7So" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OIq-b5-rt8"/>
+                            <constraint firstItem="fXB-Cd-7So" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bgc-Ef-VZ6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IOD-Pt-9Sb" secondAttribute="bottom" id="ceX-uw-IFx"/>
+                            <constraint firstItem="fXB-Cd-7So" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ffu-Qr-YOm"/>
                             <constraint firstItem="IOD-Pt-9Sb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ib0-4D-7O7"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="fXB-Cd-7So" id="BDT-BC-6r1"/>
                         <outlet property="btnNo" destination="qvu-eL-mbx" id="lmc-vz-WUe"/>
                         <outlet property="btnYes" destination="G1e-yR-4mA" id="Q2d-Au-UnJ"/>
                         <outlet property="counterLabel" destination="yaG-pK-q8o" id="4yy-8n-yo6"/>
