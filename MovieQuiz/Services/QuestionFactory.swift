@@ -61,7 +61,7 @@ class QuestionFactory: QuestionFactoryProtocol{
         
         moviesLoader.loadMovies{
             [weak self] result in
-            DispatchQueue.global().async {
+            DispatchQueue.main.async {
                 guard let self = self else {return}
                 switch result{
                 case .success(let mostPolularMovies):
