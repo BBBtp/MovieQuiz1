@@ -22,7 +22,7 @@ final class MovieQuizViewController: UIViewController,QuestionFactoryDelegate{
     private var alertPresenter: AlertPresenter!
     
     func didLoadDataFromServer() {
-        activityIndicator.isHidden = true
+        hideLoadingIndicator()
         questionFactory?.requestNextQuestion()
     }
 
