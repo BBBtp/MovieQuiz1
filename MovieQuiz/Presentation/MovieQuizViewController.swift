@@ -8,7 +8,6 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
     @IBOutlet weak var btnYes: UIButton!
     @IBOutlet weak var btnNo: UIButton!
     
-<<<<<<< HEAD
     private var alertPresenter = AlertPresenter()
     private var presenter: MovieQuizPresenter!
     
@@ -20,12 +19,8 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         imageView.layer.cornerRadius = 20
         showLoadingIndicator()
         presenter = MovieQuizPresenter(viewController: self)
-=======
-    func didLoadDataFromServer() {
-        hideLoadingIndicator()
-        questionFactory?.requestNextQuestion()
->>>>>>> 03f98e3f4909c079ffc7af8784e9c7d84f36d603
     }
+    
     
     
     //MARK: - Actions
