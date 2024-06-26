@@ -6,15 +6,18 @@
 //
 
 import Foundation
-class QuestionFactory: QuestionFactoryProtocol{
+class QuestionFactory: QuestionFactoryProtocol {
+    
     private let moviesLoader: MoviesLoading
     private var questionFactory: QuestionFactoryProtocol?
     weak var delegate: QuestionFactoryDelegate?
     private var movies: [MostPopularMovie] = []
+    
     init(moviesLoader: MoviesLoading, delegate: QuestionFactoryDelegate?) {
             self.moviesLoader = moviesLoader
             self.delegate = delegate
         }
+    
     /*private let questions: [QuizQuestion] = [
             QuizQuestion(
                 image: "The Godfather",
@@ -59,7 +62,7 @@ class QuestionFactory: QuestionFactoryProtocol{
         ]*/
     func loadData() {
         
-        moviesLoader.loadMovies{
+        moviesLoader.loadMovies {
             [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else {return}
@@ -79,6 +82,7 @@ class QuestionFactory: QuestionFactoryProtocol{
             }
        }
     func requestNextQuestion() {
+        
         DispatchQueue.global().async {
             [weak self] in
             guard let self = self else {return}
