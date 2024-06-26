@@ -1,6 +1,6 @@
 import UIKit
 
-final class MovieQuizViewController: UIViewController{
+final class MovieQuizViewController: UIViewController, MovieQuizViewControllerProtocol{
     @IBOutlet private var textLabel: UILabel!
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var counterLabel: UILabel!
@@ -24,19 +24,13 @@ final class MovieQuizViewController: UIViewController{
     
     //MARK: - Actions
     
-    @IBAction private func noButtonClicked(_ sender: UIButton) {
+    @IBAction private func noButtonClicked(_ sender: BounceButton) {
         presenter.noButtonClicked()
     }
     
 
-    @IBAction private func yesButtonClicked(_ sender: UIButton) {
+    @IBAction private func yesButtonClicked(_ sender: BounceButton) {
         presenter.yesButtonClicked()
-    }
-    
-    //MARK: - Private functions
-    
-    private func showNextQuestionOrResults() {
-        presenter.proceedToNextQuestionOrResults()
     }
     
     //MARK: - Public functions
@@ -98,5 +92,13 @@ final class MovieQuizViewController: UIViewController{
         counterLabel.text = step.questionNumber
         imageView.image = step.image
      }
+    func enableYesNoButtons() {
+            btnYes.isEnabled = true
+            btnNo.isEnabled = true
+        }
 
+    func disableYesNoButtons() {
+            btnYes.isEnabled = false
+            btnNo.isEnabled = false
+        }
 }

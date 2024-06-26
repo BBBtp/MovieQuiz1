@@ -67,7 +67,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6oe-FJ-Qzg">
                                         <rect key="frame" x="0.0" y="778" width="388" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvu-eL-mbx">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvu-eL-mbx" customClass="BounceButton" customModule="MovieQuiz" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="184" height="60"/>
                                                 <color key="backgroundColor" name="YP White"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="No"/>
@@ -89,7 +89,7 @@
                                                     <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hb7-qo-XFU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-yR-4mA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-yR-4mA" customClass="BounceButton" customModule="MovieQuiz" customModuleProvider="target">
                                                 <rect key="frame" x="204" y="0.0" width="184" height="60"/>
                                                 <color key="backgroundColor" name="YP White"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="Yes"/>
