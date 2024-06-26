@@ -61,7 +61,7 @@ class QuestionFactory: QuestionFactoryProtocol{
         
         moviesLoader.loadMovies{
             [weak self] result in
-            DispatchQueue.global().async {
+            DispatchQueue.main.async {
                 guard let self = self else {return}
                 switch result{
                 case .success(let mostPolularMovies):
@@ -69,6 +69,11 @@ class QuestionFactory: QuestionFactoryProtocol{
                     self.delegate?.didLoadDataFromServer()
                 case .failure(let error):
                     self.delegate?.didFailToLoadData(with: error)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                        [weak self] in
+                        guard let self = self else {return}
+                        self.loadData()
+                    }
                     }
                 }
             }
@@ -83,10 +88,10 @@ class QuestionFactory: QuestionFactoryProtocol{
             var imageData = Data()
             do{
                 imageData = try Data(contentsOf: movie.resizedImageURL)
-                print("Удалось загрузить картинку")
+                print("Загрузка картинки: ✅")
             }
             catch{
-                print("Не удалось загрузить картинку")
+                print("Загрузка картинки: ❌")
                 }
             let rating = Float(movie.rating) ?? 0
             let textrating = (4...9).randomElement() ?? 0
