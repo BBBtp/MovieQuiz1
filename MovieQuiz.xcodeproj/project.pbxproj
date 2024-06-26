@@ -20,9 +20,16 @@
 		4324848E2C23163D006F88B3 /* MoviesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324848D2C23163D006F88B3 /* MoviesLoader.swift */; };
 		434C65252BF5078C003528FC /* YS Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 434C65232BF5078C003528FC /* YS Display-Bold.ttf */; };
 		434C65262BF5078C003528FC /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 434C65242BF5078C003528FC /* YS Display-Medium.ttf */; };
+		43995EB82C2BFB20005D7BB1 /* MovieQuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43995EB72C2BFB20005D7BB1 /* MovieQuizPresenter.swift */; };
+		43995EBA2C2C1CCF005D7BB1 /* MovieQuizViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43995EB92C2C1CCF005D7BB1 /* MovieQuizViewControllerProtocol.swift */; };
+		43995EC22C2C1DA1005D7BB1 /* MovieQuizPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43995EC12C2C1DA1005D7BB1 /* MovieQuizPresenterTests.swift */; };
+		43995ECA2C2C287E005D7BB1 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43995EC92C2C287E005D7BB1 /* BounceButton.swift */; };
 		43B09DD32BFA43340096B87B /* QuizStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B09DD22BFA43340096B87B /* QuizStepViewModel.swift */; };
 		43B09DD52BFA43450096B87B /* QuizResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B09DD42BFA43450096B87B /* QuizResultsViewModel.swift */; };
 		43B09DD72BFA43510096B87B /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B09DD62BFA43510096B87B /* QuizQuestion.swift */; };
+		43F218392C2AC6B20035448B /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F218382C2AC6B20035448B /* ArrayTests.swift */; };
+		43F2183B2C2AC8BB0035448B /* MoviesLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F2183A2C2AC8BB0035448B /* MoviesLoaderTests.swift */; };
+		43F218432C2ACF230035448B /* MovieQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F218422C2ACF230035448B /* MovieQuizUITests.swift */; };
 		AD1ABAB22831907B00B3E448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1ABAB12831907B00B3E448 /* AppDelegate.swift */; };
 		AD1ABAB42831907B00B3E448 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1ABAB32831907B00B3E448 /* SceneDelegate.swift */; };
 		AD1ABAB62831907B00B3E448 /* MovieQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1ABAB52831907B00B3E448 /* MovieQuizViewController.swift */; };
@@ -33,6 +40,30 @@
 		AD77F5742857F8810062FB14 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD77F5732857F8810062FB14 /* Date+Extensions.swift */; };
 		AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7AFA542836189F00399704 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43995EC32C2C1DA1005D7BB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1ABAA62831907B00B3E448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1ABAAD2831907B00B3E448;
+			remoteInfo = MovieQuiz;
+		};
+		43F218332C2AC32A0035448B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1ABAA62831907B00B3E448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1ABAAD2831907B00B3E448;
+			remoteInfo = MovieQuiz;
+		};
+		43F218462C2ACF230035448B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1ABAA62831907B00B3E448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1ABAAD2831907B00B3E448;
+			remoteInfo = MovieQuiz;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4324843D2C1CA315006F88B3 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
@@ -48,9 +79,19 @@
 		4324848D2C23163D006F88B3 /* MoviesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesLoader.swift; sourceTree = "<group>"; };
 		434C65232BF5078C003528FC /* YS Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Bold.ttf"; sourceTree = "<group>"; };
 		434C65242BF5078C003528FC /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
+		43995EB72C2BFB20005D7BB1 /* MovieQuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizPresenter.swift; sourceTree = "<group>"; };
+		43995EB92C2C1CCF005D7BB1 /* MovieQuizViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizViewControllerProtocol.swift; sourceTree = "<group>"; };
+		43995EBF2C2C1DA1005D7BB1 /* MovieQuizPresenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizPresenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43995EC12C2C1DA1005D7BB1 /* MovieQuizPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizPresenterTests.swift; sourceTree = "<group>"; };
+		43995EC92C2C287E005D7BB1 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		43B09DD22BFA43340096B87B /* QuizStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStepViewModel.swift; sourceTree = "<group>"; };
 		43B09DD42BFA43450096B87B /* QuizResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsViewModel.swift; sourceTree = "<group>"; };
 		43B09DD62BFA43510096B87B /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		43F2182F2C2AC3290035448B /* MovieQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F218382C2AC6B20035448B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		43F2183A2C2AC8BB0035448B /* MoviesLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesLoaderTests.swift; sourceTree = "<group>"; };
+		43F218402C2ACF230035448B /* MovieQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F218422C2ACF230035448B /* MovieQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizUITests.swift; sourceTree = "<group>"; };
 		AD1ABAAE2831907B00B3E448 /* MovieQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1ABAB12831907B00B3E448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1ABAB32831907B00B3E448 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +106,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		43995EBC2C2C1DA1005D7BB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F2182C2C2AC3290035448B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F2183D2C2ACF230035448B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD1ABAAB2831907B00B3E448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,6 +160,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		43995EC02C2C1DA1005D7BB1 /* MovieQuizPresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				43995EC12C2C1DA1005D7BB1 /* MovieQuizPresenterTests.swift */,
+			);
+			path = MovieQuizPresenterTests;
+			sourceTree = "<group>";
+		};
+		43995EC82C2C2802005D7BB1 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				43995EC92C2C287E005D7BB1 /* BounceButton.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
 		43B09DD12BFA431D0096B87B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,12 +189,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		43F218302C2AC3290035448B /* MovieQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				43F218382C2AC6B20035448B /* ArrayTests.swift */,
+				43F2183A2C2AC8BB0035448B /* MoviesLoaderTests.swift */,
+			);
+			path = MovieQuizTests;
+			sourceTree = "<group>";
+		};
+		43F218412C2ACF230035448B /* MovieQuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43F218422C2ACF230035448B /* MovieQuizUITests.swift */,
+			);
+			path = MovieQuizUITests;
+			sourceTree = "<group>";
+		};
 		8F4738322848DE2A005DF65E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				AD1ABAB52831907B00B3E448 /* MovieQuizViewController.swift */,
 				AD1ABAB72831907B00B3E448 /* Main.storyboard */,
 				4324843F2C1CA61B006F88B3 /* AlertPresenter.swift */,
+				43995EB72C2BFB20005D7BB1 /* MovieQuizPresenter.swift */,
+				43995EB92C2C1CCF005D7BB1 /* MovieQuizViewControllerProtocol.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -136,6 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				AD1ABAB02831907B00B3E448 /* MovieQuiz */,
+				43F218302C2AC3290035448B /* MovieQuizTests */,
+				43F218412C2ACF230035448B /* MovieQuizUITests */,
+				43995EC02C2C1DA1005D7BB1 /* MovieQuizPresenterTests */,
 				AD1ABAAF2831907B00B3E448 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,6 +244,9 @@
 			isa = PBXGroup;
 			children = (
 				AD1ABAAE2831907B00B3E448 /* MovieQuiz.app */,
+				43F2182F2C2AC3290035448B /* MovieQuizTests.xctest */,
+				43F218402C2ACF230035448B /* MovieQuizUITests.xctest */,
+				43995EBF2C2C1DA1005D7BB1 /* MovieQuizPresenterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +254,7 @@
 		AD1ABAB02831907B00B3E448 /* MovieQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				43995EC82C2C2802005D7BB1 /* CustomControls */,
 				4324845E2C1CD6B8006F88B3 /* Services */,
 				43B09DD12BFA431D0096B87B /* Models */,
 				AD1ABAB12831907B00B3E448 /* AppDelegate.swift */,
@@ -175,6 +279,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		43995EBE2C2C1DA1005D7BB1 /* MovieQuizPresenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43995EC52C2C1DA1005D7BB1 /* Build configuration list for PBXNativeTarget "MovieQuizPresenterTests" */;
+			buildPhases = (
+				43995EBB2C2C1DA1005D7BB1 /* Sources */,
+				43995EBC2C2C1DA1005D7BB1 /* Frameworks */,
+				43995EBD2C2C1DA1005D7BB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43995EC42C2C1DA1005D7BB1 /* PBXTargetDependency */,
+			);
+			name = MovieQuizPresenterTests;
+			productName = MovieQuizPresenterTests;
+			productReference = 43995EBF2C2C1DA1005D7BB1 /* MovieQuizPresenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43F2182E2C2AC3290035448B /* MovieQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43F218372C2AC32A0035448B /* Build configuration list for PBXNativeTarget "MovieQuizTests" */;
+			buildPhases = (
+				43F2182B2C2AC3290035448B /* Sources */,
+				43F2182C2C2AC3290035448B /* Frameworks */,
+				43F2182D2C2AC3290035448B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43F218342C2AC32A0035448B /* PBXTargetDependency */,
+			);
+			name = MovieQuizTests;
+			productName = MovieQuizTests;
+			productReference = 43F2182F2C2AC3290035448B /* MovieQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43F2183F2C2ACF230035448B /* MovieQuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43F218482C2ACF230035448B /* Build configuration list for PBXNativeTarget "MovieQuizUITests" */;
+			buildPhases = (
+				43F2183C2C2ACF230035448B /* Sources */,
+				43F2183D2C2ACF230035448B /* Frameworks */,
+				43F2183E2C2ACF230035448B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43F218472C2ACF230035448B /* PBXTargetDependency */,
+			);
+			name = MovieQuizUITests;
+			productName = MovieQuizUITests;
+			productReference = 43F218402C2ACF230035448B /* MovieQuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AD1ABAAD2831907B00B3E448 /* MovieQuiz */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD1ABAC22831907F00B3E448 /* Build configuration list for PBXNativeTarget "MovieQuiz" */;
@@ -199,10 +357,22 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					43995EBE2C2C1DA1005D7BB1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AD1ABAAD2831907B00B3E448;
+					};
+					43F2182E2C2AC3290035448B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AD1ABAAD2831907B00B3E448;
+					};
+					43F2183F2C2ACF230035448B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AD1ABAAD2831907B00B3E448;
+					};
 					AD1ABAAD2831907B00B3E448 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -222,11 +392,35 @@
 			projectRoot = "";
 			targets = (
 				AD1ABAAD2831907B00B3E448 /* MovieQuiz */,
+				43F2182E2C2AC3290035448B /* MovieQuizTests */,
+				43F2183F2C2ACF230035448B /* MovieQuizUITests */,
+				43995EBE2C2C1DA1005D7BB1 /* MovieQuizPresenterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		43995EBD2C2C1DA1005D7BB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F2182D2C2AC3290035448B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F2183E2C2ACF230035448B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD1ABAAC2831907B00B3E448 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +436,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		43995EBB2C2C1DA1005D7BB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43995EC22C2C1DA1005D7BB1 /* MovieQuizPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F2182B2C2AC3290035448B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F218392C2AC6B20035448B /* ArrayTests.swift in Sources */,
+				43F2183B2C2AC8BB0035448B /* MoviesLoaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F2183C2C2ACF230035448B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F218432C2ACF230035448B /* MovieQuizUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD1ABAAA2831907B00B3E448 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +471,7 @@
 				432484402C1CA61B006F88B3 /* AlertPresenter.swift in Sources */,
 				432484642C1CD756006F88B3 /* QuestionFactoryProtocol.swift in Sources */,
 				432484682C1CD78F006F88B3 /* StatisticServiceProtocol.swift in Sources */,
+				43995EBA2C2C1CCF005D7BB1 /* MovieQuizViewControllerProtocol.swift in Sources */,
 				4324848A2C23140B006F88B3 /* NetworkClient.swift in Sources */,
 				4324848E2C23163D006F88B3 /* MoviesLoader.swift in Sources */,
 				4324843E2C1CA315006F88B3 /* AlertModel.swift in Sources */,
@@ -259,9 +479,11 @@
 				432484572C1CD2D5006F88B3 /* GameResult.swift in Sources */,
 				AD1ABAB62831907B00B3E448 /* MovieQuizViewController.swift in Sources */,
 				43B09DD32BFA43340096B87B /* QuizStepViewModel.swift in Sources */,
+				43995EB82C2BFB20005D7BB1 /* MovieQuizPresenter.swift in Sources */,
 				43B09DD72BFA43510096B87B /* QuizQuestion.swift in Sources */,
 				432484662C1CD771006F88B3 /* StatisticService.swift in Sources */,
 				AD77F5742857F8810062FB14 /* Date+Extensions.swift in Sources */,
+				43995ECA2C2C287E005D7BB1 /* BounceButton.swift in Sources */,
 				AD1ABAB22831907B00B3E448 /* AppDelegate.swift in Sources */,
 				432484602C1CD704006F88B3 /* QuestionFactory.swift in Sources */,
 				43B09DD52BFA43450096B87B /* QuizResultsViewModel.swift in Sources */,
@@ -270,6 +492,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43995EC42C2C1DA1005D7BB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1ABAAD2831907B00B3E448 /* MovieQuiz */;
+			targetProxy = 43995EC32C2C1DA1005D7BB1 /* PBXContainerItemProxy */;
+		};
+		43F218342C2AC32A0035448B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1ABAAD2831907B00B3E448 /* MovieQuiz */;
+			targetProxy = 43F218332C2AC32A0035448B /* PBXContainerItemProxy */;
+		};
+		43F218472C2ACF230035448B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1ABAAD2831907B00B3E448 /* MovieQuiz */;
+			targetProxy = 43F218462C2ACF230035448B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD1ABAB72831907B00B3E448 /* Main.storyboard */ = {
@@ -291,6 +531,112 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		43995EC62C2C1DA1005D7BB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuizPresenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieQuiz.app/MovieQuiz";
+			};
+			name = Debug;
+		};
+		43995EC72C2C1DA1005D7BB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuizPresenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieQuiz.app/MovieQuiz";
+			};
+			name = Release;
+		};
+		43F218352C2AC32A0035448B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieQuiz.app/MovieQuiz";
+			};
+			name = Debug;
+		};
+		43F218362C2AC32A0035448B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieQuiz.app/MovieQuiz";
+			};
+			name = Release;
+		};
+		43F218492C2ACF230035448B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieQuiz;
+			};
+			name = Debug;
+		};
+		43F2184A2C2ACF230035448B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieQuiz;
+			};
+			name = Release;
+		};
 		AD1ABAC02831907F00B3E448 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,6 +818,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		43995EC52C2C1DA1005D7BB1 /* Build configuration list for PBXNativeTarget "MovieQuizPresenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43995EC62C2C1DA1005D7BB1 /* Debug */,
+				43995EC72C2C1DA1005D7BB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43F218372C2AC32A0035448B /* Build configuration list for PBXNativeTarget "MovieQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43F218352C2AC32A0035448B /* Debug */,
+				43F218362C2AC32A0035448B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43F218482C2ACF230035448B /* Build configuration list for PBXNativeTarget "MovieQuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43F218492C2ACF230035448B /* Debug */,
+				43F2184A2C2ACF230035448B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AD1ABAA92831907B00B3E448 /* Build configuration list for PBXProject "MovieQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

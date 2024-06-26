@@ -9,15 +9,18 @@ import Foundation
 import UIKit
 
 class AlertPresenter{
-    weak var viewController: UIViewController?
-    init(viewController: UIViewController) {
-        self.viewController = viewController
-    }
-    
-    func presentAlert(model:AlertModel){
-        let alertController = UIAlertController(title: model.title, message: model.message, preferredStyle: .alert)
-        let alertAction=UIAlertAction(title: model.buttonText, style: .default){_ in model.completion()}
-        alertController.addAction(alertAction)
-        viewController?.present(alertController, animated: true, completion: nil)
+    func show(in vc: UIViewController, model: AlertModel) {
+        let alert = UIAlertController(
+            title: model.title,
+            message: model.message,
+            preferredStyle: .alert)
+        alert.view.accessibilityIdentifier = "Game result"
+        let action = UIAlertAction(title: model.buttonText, style: .default) { _ in
+            model.completion()
+        }
+
+        alert.addAction(action)
+
+        vc.present(alert, animated: true, completion: nil)
     }
 }
